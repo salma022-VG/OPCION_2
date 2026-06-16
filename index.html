@@ -3277,7 +3277,7 @@
                 if (ended) return;
                 if (introVideo.duration > 0) {
                     progressFill.style.width = `${(introVideo.currentTime / introVideo.duration) * 100}%`;
-                    if (introVideo.duration - introVideo.currentTime <= 2) { endIntro(); return; }
+                    if (introVideo.duration - introVideo.currentTime <= 1) { endIntro(); return; }
                 }
                 rafId = requestAnimationFrame(tickProgress);
             }
